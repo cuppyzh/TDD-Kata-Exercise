@@ -29,7 +29,10 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
         [InlineData("//;\n1;2;4\n5", 12)]
         [InlineData("//;\n1;2;4\n5;1001", 12)]
         [InlineData("//;\n1;2;4\n5;1000", 1012)]
-        [InlineData("//;;\n1;;2", 3)]
+        [InlineData("//[;;]\n1;;2", 3)]
+        [InlineData("//[--]\n1--4", 5)]
+        [InlineData("//[*][%]\n1*2%3", 6)]
+        [InlineData("//[**][%%]\n1**2%%3", 6)]
         public void Add_Tests_Success_ReturnExpectedResult(string testCase, int expectedResult)
         {
             var result = stringCalculator.Add(testCase);
