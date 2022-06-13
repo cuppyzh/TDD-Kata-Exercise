@@ -25,6 +25,12 @@ namespace Cuppyzh.Exercise.TDD.Kata1
             }
 
             List<int> listOfNumber = numbers.Split(delimiter).Select(element => int.Parse(element)).ToList();
+            List<int> listOfNegativeNumber = listOfNumber.Where(element => element < 0).ToList();
+
+            if(listOfNegativeNumber.Count > 0)
+            {
+                throw new Exception($"negatives not allowed: {string.Join(",", listOfNegativeNumber)}");
+            }
 
             return listOfNumber.Sum(element => element);
         }
