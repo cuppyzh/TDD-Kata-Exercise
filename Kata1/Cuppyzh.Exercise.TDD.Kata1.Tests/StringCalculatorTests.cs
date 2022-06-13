@@ -20,6 +20,9 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
         [InlineData("1\n2,3\n2", 8)]
         [InlineData("1\n2,3", 6)]
         [InlineData("1\n2", 3)]
+        [InlineData("//;\n1;2",3)]
+        [InlineData("//-\n1-2", 3)]
+        [InlineData("//;\n1;2;4\n5", 12)]
         public void Add_Tests(string testCase, int expectedResult)
         {
             var result = stringCalculator.Add(testCase);
