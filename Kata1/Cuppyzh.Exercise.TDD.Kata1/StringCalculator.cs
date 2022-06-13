@@ -2,19 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Cuppyzh.Exercise.TDD.Kata1
 {
     public class StringCalculator : IStringCalculator
     {
-        public int Add(string numbers)
+        public int Add(string input)
         {
+            var numbers = input;
+
             string delimiter = ",";
 
             if (numbers.StartsWith("//"))
             {
-                delimiter = numbers[2].ToString();
-                numbers = numbers.Substring(4);
+                Regex regex = new Regex("(?<=//)(.*?)(?=\\n)");
+                var matchResult = regex.Match(numbers);
+                delimiter = matchResult.Value;
+
+                numbers = numbers.Replace("//" + delimiter + "\n", "");
             }
 
             numbers = numbers.Replace("\n", delimiter);
