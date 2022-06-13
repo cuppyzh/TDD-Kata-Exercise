@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kata1", "Kata1", "{656C393B-8983-4733-B45D-33BF78A15D6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuppyzh.Exercise.TDD.Kata1", "Kata1\Cuppyzh.Exercise.TDD.Kata1\Cuppyzh.Exercise.TDD.Kata1.csproj", "{A41CED63-85AB-4E98-B138-459DC02B5155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuppyzh.Exercise.TDD.Kata1.Tests", "Kata1\Cuppyzh.Exercise.TDD.Kata1.Tests\Cuppyzh.Exercise.TDD.Kata1.Tests.csproj", "{7DEBFE94-DBB9-4065-BB89-AB874826F7D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A41CED63-85AB-4E98-B138-459DC02B5155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41CED63-85AB-4E98-B138-459DC02B5155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41CED63-85AB-4E98-B138-459DC02B5155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41CED63-85AB-4E98-B138-459DC02B5155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEBFE94-DBB9-4065-BB89-AB874826F7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEBFE94-DBB9-4065-BB89-AB874826F7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEBFE94-DBB9-4065-BB89-AB874826F7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEBFE94-DBB9-4065-BB89-AB874826F7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A41CED63-85AB-4E98-B138-459DC02B5155} = {656C393B-8983-4733-B45D-33BF78A15D6B}
+		{7DEBFE94-DBB9-4065-BB89-AB874826F7D3} = {656C393B-8983-4733-B45D-33BF78A15D6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {287ACF26-E0C0-41B7-9372-E5CC19993A36}
+	EndGlobalSection
+EndGlobal
