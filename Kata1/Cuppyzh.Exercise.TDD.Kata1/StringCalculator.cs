@@ -24,7 +24,7 @@ namespace Cuppyzh.Exercise.TDD.Kata1
                 return 0;
             }
 
-            List<int> listOfNumber = numbers.Split(delimiter).Select(element => int.Parse(element)).ToList();
+            List<int> listOfNumber = numbers.Split(delimiter).Select(element => int.Parse(element)).Where(element => element <= 1000).ToList();
             List<int> listOfNegativeNumber = listOfNumber.Where(element => element < 0).ToList();
 
             if(listOfNegativeNumber.Count > 0)
