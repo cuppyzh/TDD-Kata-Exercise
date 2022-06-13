@@ -17,6 +17,9 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
         [InlineData("12", 12)]
         [InlineData("1,4", 5)]
         [InlineData("0,2", 2)]
+        [InlineData("1\n2,3\n2", 8)]
+        [InlineData("1\n2,3", 6)]
+        [InlineData("1\n2", 3)]
         public void Add_Tests(string testCase, int expectedResult)
         {
             var result = stringCalculator.Add(testCase);

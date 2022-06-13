@@ -9,6 +9,8 @@ namespace Cuppyzh.Exercise.TDD.Kata1
     {
         public int Add(string numbers)
         {
+            numbers = numbers.Replace("\n", ",");
+
             if (string.IsNullOrEmpty(numbers))
             {
                 return 0;
