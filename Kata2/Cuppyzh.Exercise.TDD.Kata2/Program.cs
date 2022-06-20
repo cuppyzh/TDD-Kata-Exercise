@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cuppyzh.Exercise.TDD.Kata1
+namespace Cuppyzh.Exercise.TDD.Kata2
 {
     class Program
     {

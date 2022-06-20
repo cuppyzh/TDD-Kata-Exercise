@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cuppyzh.Exercise.TDD.Kata1\Cuppyzh.Exercise.TDD.Kata1.csproj" />
+    <ProjectReference Include="..\Cuppyzh.Exercise.TDD.Kata2\Cuppyzh.Exercise.TDD.Kata2.csproj" />
   </ItemGroup>
 
 </Project>
