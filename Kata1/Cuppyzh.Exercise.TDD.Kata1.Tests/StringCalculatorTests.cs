@@ -1,4 +1,6 @@
 ﻿using FluentAssertions;
+using Microsoft.Extensions.Logging;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,13 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
 {
     public class StringCalculatorTests
     {
-        private readonly IStringCalculator stringCalculator = new StringCalculator();
+        private Mock<ILogger<StringCalculator>> _mockLogger = new Mock<ILogger<StringCalculator>>();
+        private IStringCalculator stringCalculator;
+
+        public StringCalculatorTests()
+        {
+            stringCalculator = new StringCalculator(_mockLogger.Object);
+        }
 
         [Theory]
         [InlineData("", 0)]
@@ -38,6 +46,7 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
             var result = stringCalculator.Add(testCase);
 
             Assert.Equal(expectedResult, result);
+            //_mockLogger.Verify(method => method.LogInformation($"The result is {expectedResult}"), Times.Once);
         }
 
         [Theory]
@@ -57,6 +66,7 @@ namespace Cuppyzh.Exercise.TDD.Kata1.Tests
 
             act.Should().Throw<Exception>()
                 .Where(exception => exception.Message.Equals($"negatives not allowed: {expectedResult}"));
+            //_mockLogger.Verify(method => method.LogError($"Error occurred"), Times.Once);
         }
     }
 }
