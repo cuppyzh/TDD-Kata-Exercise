@@ -7,7 +7,9 @@ TDD (Test-Driven Development) practice taken from https://osherove.com/. Persona
 
 ### TDD Kata 1 - String Calculator
 Practice Scenario: [TDD Kata 1 - String Calculator — Roy Osherove](https://osherove.com/tdd-kata-1)
+
 Progress can be found here: [cuppyzh/TDD-Kata-Exercise at feature/tdd-kata-1 (github.com)](https://github.com/cuppyzh/TDD-Kata-Exercise/tree/feature/tdd-kata-1)
+
 Time Taken: 59m25s
 
 **Summary**
@@ -22,7 +24,9 @@ Also, the code was changed from using Substring to Regex to simplify the code.
 
 ### TDD Kata 2 - Interaction
 Practice Scenario: [TDD Kata 1 - String Calculator — Roy Osherove](https://osherove.com/tdd-kata-2)
+
 Progress can be found here: [cuppyzh/TDD-Kata-Exercise at feature/tdd-kata-1 (github.com)](https://github.com/cuppyzh/TDD-Kata-Exercise/tree/feature/tdd-kata-2)
+
 Time Taken: 29m09s
 
 **Summary**
