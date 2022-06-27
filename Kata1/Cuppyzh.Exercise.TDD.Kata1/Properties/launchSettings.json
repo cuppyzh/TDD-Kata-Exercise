@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Cuppyzh.Exercise.TDD.Kata1": {
+      "commandName": "Project",
+      "commandLineArgs": "1,2,3"
+    }
+  }
+}

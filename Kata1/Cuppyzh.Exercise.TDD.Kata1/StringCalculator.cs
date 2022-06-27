@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,13 @@ namespace Cuppyzh.Exercise.TDD.Kata1
 {
     public class StringCalculator : IStringCalculator
     {
+        private ILogger _logger;
+
+        public StringCalculator(ILogger<StringCalculator> logger)
+        {
+            _logger = logger;
+        }
+
         public int Add(string input)
         {
             var numbers = input;
@@ -44,6 +52,7 @@ namespace Cuppyzh.Exercise.TDD.Kata1
 
             if (string.IsNullOrEmpty(numbers))
             {
+                _logger.LogInformation($"The result is 0");
                 return 0;
             }
 
@@ -52,10 +61,14 @@ namespace Cuppyzh.Exercise.TDD.Kata1
 
             if (listOfNegativeNumber.Count > 0)
             {
+                _logger.LogError("Error occurred");
                 throw new Exception($"negatives not allowed: {string.Join(",", listOfNegativeNumber)}");
             }
 
-            return listOfNumber.Sum(element => element);
+            var result = listOfNumber.Sum(element => element);
+            _logger.LogInformation($"The result is {result}");
+
+            return result;
         }
     }
 }
