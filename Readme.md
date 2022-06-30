@@ -23,9 +23,9 @@ Also, the code was changed from using Substring to Regex to simplify the code.
 - Need to learn to be Native on Regex
 
 ### TDD Kata 2 - Interaction
-Practice Scenario: [TDD Kata 1 - String Calculator — Roy Osherove](https://osherove.com/tdd-kata-2)
+Practice Scenario: [TDD Kata 2 - String Calculator — Roy Osherove](https://osherove.com/tdd-kata-2)
 
-Progress can be found here: [cuppyzh/TDD-Kata-Exercise at feature/tdd-kata-1 (github.com)](https://github.com/cuppyzh/TDD-Kata-Exercise/tree/feature/tdd-kata-2)
+Progress can be found here: [cuppyzh/TDD-Kata-Exercise at feature/tdd-kata-2 (github.com)](https://github.com/cuppyzh/TDD-Kata-Exercise/tree/feature/tdd-kata-2)
 
 Time Taken: 29m09s
 
@@ -34,3 +34,16 @@ Applying ILogger feature that need to works when the program is run, but also no
 
 **Room to Improve**
 - Still doing this on Visual Studio, need to be fluent in Visual Code to more versatile language/framework
+
+### TDD Kata 3 - Refactoring
+Practice Scenario: [TDD Kata 3 - String Calculator — Roy Osherove](https://osherove.com/tdd-kata-3)
+
+Progress can be found here: [cuppyzh/TDD-Kata-Exercise at feature/tdd-kata-3 (github.com)](https://github.com/cuppyzh/TDD-Kata-Exercise/tree/feature/tdd-kata-3)
+
+Time Taken: 36m22s
+
+**Summary**
+I took some time to figure out what I need to do, this scenario feels lack of guidance about what need to do. 
+
+**Room to Improve**
+- Read the specification slowly better comprehensive
